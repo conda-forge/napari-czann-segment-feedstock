@@ -1,13 +1,13 @@
 {% set name = "napari-czann-segment" %}
-{% set version = "0.0.17" %}
+{% set version = "0.0.21" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-czann-segment-{{ version }}.tar.gz
-  sha256: 0c35fef64e07aa5a6e5c74603f40cb55b00d0e72492e777378ee0b6e2f9e68c1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 908d5e01ec3710fa77af8cef78b992ba71cb7ad8d99341ec3f3677e375862856
 
 build:
   noarch: python
